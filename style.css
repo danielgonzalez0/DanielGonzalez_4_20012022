@@ -587,7 +587,7 @@ a[data-lightbox]:hover img {
 
 #lightbox-modal .modal-dialog {
   width: 90%;
-  max-width: 900px;
+  max-width: 750px; /*changement*/
   margin: 0 auto 0;
 }
 
@@ -644,13 +644,19 @@ a[data-lightbox]:hover img {
   right: 25px;
 }
 
+/*changement*/
+.next-lightbox a {
+  color: #fff !important;
+}
+
 .prev-lightbox {
   padding: 6px 13px 1px 10px;
   left: 25px;
 }
 
+/*changement*/
 .snapshot-lb .modal-body {
-  padding-bottom: 45px;
+  padding: 60px 100px;
 }
 
 .snapshot-lb .lightbox-caption {
@@ -671,7 +677,7 @@ label,
 a {
   font-family: 'helvetica';
   font-weight: 400;
-  color: #575757 !important;
+  color: #575757;
 }
 
 .container {
@@ -727,6 +733,10 @@ p {
 h2 {
   font-size: 22px;
   line-height: 1.4em;
+  /* text-transform: lowercase !important;*/
+  /*changement*/
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5) !important;
 }
 
 h3 {
@@ -875,13 +885,13 @@ p {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .b-parallax {
     background-attachment: scroll;
   }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-pixel-ratio: 1.5) {
   .b-parallax {
     background-attachment: scroll;
   }
@@ -899,21 +909,21 @@ p {
     overflow-x: hidden;
     position: relative;
   }
-  .bloc {
+  /*.bloc {
     padding-left: constant(safe-area-inset-left);
     padding-right: constant(safe-area-inset-right);
-  }
+  }*/
   .bloc-group,
   .bloc-group .bloc {
     display: block;
     width: 100%;
   }
-  .bloc-fill-screen .fill-bloc-top-edge,
+  /*.bloc-fill-screen .fill-bloc-top-edge,
   .bloc-fill-screen .fill-bloc-bottom-edge {
     padding: 0 20px;
     padding-left: constant(safe-area-inset-left);
     padding-right: constant(safe-area-inset-right);
-  }
+  }*/
 }
 
 @media (max-width: 767px) {
@@ -1127,8 +1137,30 @@ iframe {
   color: #cd4b0e !important;
 }
 
+.portfolio {
+  max-width: 80%;
+  margin: auto;
+}
+
+.h2__portfolio,
+.form__h2 {
+  padding-bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.description__title {
+  color: #fff !important;
+  padding-bottom: 20px;
+}
+
+.p__description {
+  font-size: 22px;
+}
+
 @media (max-width: 576px) {
-  .row__p__font {
+  .row__p__font,
+  .p__description {
     font-size: 18px;
   }
   p {

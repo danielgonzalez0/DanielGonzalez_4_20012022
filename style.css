@@ -106,7 +106,7 @@ a:hover {
 }
 
 .texture-paper::before {
-  background: url('img/texture-paper.png');
+  background: url('img/compressed/texture-paper.png');
   background-size: 280px 280px;
 }
 
@@ -469,10 +469,12 @@ nav .caret {
   margin: 0 0 5px 5px;
 }
 
-.btn-d,
+.btn-d {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .btn-d:hover,
 .btn-d:focus {
-  color: yellowgreen;
   background: rgba(0, 0, 0, 0.3);
 }
 
@@ -533,7 +535,7 @@ button {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  opacity: 0;
+  opacity: 1; /*changment*/
   z-index: 500;
   transition: all 0.3s ease-in-out;
 }
@@ -793,16 +795,18 @@ p {
   background-color: #364577;
 }
 
+/*changement #f3976c*/
+
 .bgc-atomic-tangerine {
-  background-color: #f3976c;
+  background-color: #cd4b0e;
 }
 
 .tc-white {
-  color: #f3976c !important;
+  color: #f5a47f !important;
 }
 
 .btn-atomic-tangerine {
-  background: #f3976c;
+  background: #cd4b0e;
   color: #ffffff !important;
 }
 
@@ -820,7 +824,7 @@ p {
 }
 
 .ltc-atomic-tangerine {
-  color: #f3976c !important;
+  color: #cd4b0e !important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -833,19 +837,19 @@ p {
 }
 
 .bg-dots-bg {
-  background-image: url('img/dots-bg.png');
+  background-image: url('img/compressed/dots-bg.png');
 }
 
 .bg-lines-h2-bg {
-  background-image: url('img/lines-h2-bg.png');
+  background-image: url('img/compressed/lines-h2-bg.png');
 }
 
 .bg-banniere {
-  background-image: url('img/la-chouette-agence-banniere.jpg');
+  background-image: url('img/compressed/la-chouette-agence-banniere.jpg');
 }
 
 .bg-presentation {
-  background-image: url('img/image-de-presentation.bmp');
+  background-image: url('img/compressed/image-de-presentation.jpg');
 }
 
 @media (max-width: 1024px) {
@@ -1111,6 +1115,16 @@ iframe {
   margin-top: 20px;
   flex: 0 0 calc(100% - 165px);
   width: 100%;
+}
+
+.mail_adress {
+  text-decoration: underline;
+}
+
+.mail_adress:hover,
+.mail_adress:focus {
+  text-decoration: underline #cd4b0e;
+  color: #cd4b0e !important;
 }
 
 @media (max-width: 576px) {

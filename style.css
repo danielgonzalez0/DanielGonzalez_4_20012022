@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/*changement*/
+/*************************************changement fait par DG pour optimisation SEO***********************/
 /*box-sizing set up*/
 
 :root {
@@ -16,6 +16,8 @@ body {
 * {
   box-sizing: inherit;
 }
+
+/*image responsive*/
 
 .img-responsive {
   width: 100%;
@@ -27,6 +29,7 @@ button:focus {
   transition: all 0.3s ease-in-out;
   outline: solid 1.5px !important;
 }
+/*************************************end changement fait par DG pour optimisation SEO***********************/
 
 a:hover {
   text-decoration: none;
@@ -349,7 +352,7 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-  background: #e0e0e0; /*changement contrast focus*/
+  background: #e0e0e0; /****changement fait par DG pour optimisation SEO  => changement contrast focus*************/
   transition: all 0.3s ease-in-out;
 }
 
@@ -587,7 +590,7 @@ a[data-lightbox]:hover img {
 
 #lightbox-modal .modal-dialog {
   width: 90%;
-  max-width: 750px; /*changement*/
+  max-width: 750px; /************changement fait par DG pour optimisation SEO=> picture box size***********************/
   margin: 0 auto 0;
 }
 
@@ -644,20 +647,22 @@ a[data-lightbox]:hover img {
   right: 25px;
 }
 
-/*changement*/
+/*************************************changement fait par DG pour optimisation SEO***********************/
 .next-lightbox a {
-  color: #fff !important;
+  color: #fff !important; /*color of picture box button*/
 }
+/*************************************end changement fait par DG pour optimisation SEO*******************/
 
 .prev-lightbox {
   padding: 6px 13px 1px 10px;
   left: 25px;
 }
 
-/*changement*/
+/*************************************changement fait par DG pour optimisation SEO***********************/
 .snapshot-lb .modal-body {
-  padding: 60px 100px;
+  padding: 60px 100px; /*layout picture box*/
 }
+/*************************************end changement fait par DG pour optimisation SEO*******************/
 
 .snapshot-lb .lightbox-caption {
   padding: 0;
@@ -1077,7 +1082,7 @@ p {
     text-align: center;
   }
 }
-/*changement*/
+/*************************************changement fait par DG pour optimisation SEO****************************************/
 .row__p {
   display: flex;
   flex-direction: column;

@@ -630,6 +630,15 @@ a[data-lightbox]:hover img {
   color: #fff;
 }
 
+/*************************************changement fait par DG pour optimisation SEO***********************/
+.close-lightbox:focus,
+.next-lightbox:focus,
+.prev-lightbox:focus {
+  opacity: 1;
+  color: #fff;
+}
+/*************************************end changement fait par DG pour optimisation SEO*******************/
+
 .next-lightbox,
 .prev-lightbox {
   font-size: 20px;

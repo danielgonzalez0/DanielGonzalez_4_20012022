@@ -558,7 +558,9 @@ a[data-lightbox] {
   text-align: center;
 }
 
-a[data-lightbox]:hover::before {
+a[data-lightbox]:hover::before,
+a[data-lightbox]:focus::before {
+  /****************changement fait par DG optimisation SEO => focus*****************/
   content: '+';
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
     Helvetica, Arial;
@@ -1131,6 +1133,7 @@ blockquote {
   border: #ffffff solid 1.5px;
   outline: none !important;
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
 }
 
 .link_text_unvisible {
